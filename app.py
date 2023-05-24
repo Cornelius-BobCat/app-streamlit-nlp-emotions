@@ -24,7 +24,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("Extrait Tweet for Test")
-    data = pd.read_csv("jupyter/source.csv")
+    data = pd.read_csv("Jupyter/source.csv")
     # Échantillonnage aléatoire de 5 tweets
     sample_tweets = data.sample(n=3)
 
@@ -37,7 +37,7 @@ with col1:
 
 
     st.subheader("Data Source")
-    data1 = pd.read_csv("jupyter/source.csv", index_col=0)
+    data1 = pd.read_csv("Jupyter/source.csv", index_col=0)
     st.dataframe(data1)
 
 with col2:
