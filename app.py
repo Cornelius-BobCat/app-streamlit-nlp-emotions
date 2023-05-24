@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import sklearn 
 
 st.set_page_config(layout="wide")
 
