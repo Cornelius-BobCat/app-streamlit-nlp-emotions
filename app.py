@@ -4,7 +4,7 @@ import joblib
 
 st.set_page_config(layout="wide")
 
-pipe_lr = joblib.load(open("jupyter/emotion_classifier_pipe_lr.pkl", "rb"))
+pipe_lr = joblib.load(open("emotion_classifier_pipe_lr.pkl", "rb"))
 
 def predict_emotions(docx):
     results = pipe_lr.predict([docx])
